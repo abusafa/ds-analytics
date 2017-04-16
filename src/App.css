@@ -10,6 +10,18 @@
   color: #108ee9;
 }
 
+.ant-layout-sider {
+    -webkit-transition: all .3s cubic-bezier(.215,.61,.355,1);
+    transition: all .3s cubic-bezier(.215,.61,.355,1);
+    position: relative;
+    background: #0d2f54;
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    color: hsla(0,0%,100%,.67);
+    background: #0a2848;
+}
+
  .logo {
   height: 32px;
   background: #333;

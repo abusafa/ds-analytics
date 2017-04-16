@@ -3,15 +3,9 @@
 import React, {PropTypes} from 'react';
 //import turf from '@turf/turf';
 import pts from '../data/pharmacy.geo.json';
- window.turf = turf
+
 const bbox = [39.040604,21.407687,39.300156,21.788194];
-var grid = turf.hex(bbox, 0.005);
-var grid = turf.count(grid, pts, 'pt_count');
-
-
-
-console.log(grid);
-//var grid = turf.count(grid, pts, 'pt_count');
+var grid;
 
 export default class Hexbinned extends React.Component {
   constructor(props) {
@@ -19,6 +13,10 @@ export default class Hexbinned extends React.Component {
   }
 
   componentDidMount() {
+    const bbox = [39.040604,21.407687,39.300156,21.788194];
+     grid = turf.hex(bbox, 0.005);
+    grid = turf.count(grid, pts, 'pt_count');
+
       L.mapbox.accessToken = 'pk.eyJ1IjoiaWhhYiIsImEiOiJZT19QbkJJIn0.ROWLhlTd-2mI94QvdzrH8g';
 
       const layers = {

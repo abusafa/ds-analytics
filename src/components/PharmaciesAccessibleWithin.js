@@ -166,10 +166,10 @@ export default class PharmaciesAccessibleWithin extends React.Component {
                     </Col>
 
                     <Col span={6}>
-                       <RadioGroup defaultValue="pharmacy" value={this.state.layer} size="large" onChange={(value)=>this.handleChange(value)}>
+                       {/* <RadioGroup defaultValue="pharmacy" value={this.state.layer} size="large" onChange={(value)=>this.handleChange(value)}>
                           <RadioButton value="pharmacy">pharmacy</RadioButton>
                           <RadioButton value="civil defense">civil defense</RadioButton>
-                        </RadioGroup>
+                        </RadioGroup> */}
                      </Col>
 
                 </Row>
